@@ -14,7 +14,7 @@ function BookingForm() {
 
   const handleBooking = () => {
     if (!date || !time || !phone || !email) {
-      alert('Fill all fields')
+      alert('Please fill all fields!')
       return
     }
     router.push(
@@ -23,16 +23,52 @@ function BookingForm() {
   }
 
   return (
-    <div className="flex justify-center items-center min-h-screen">
-      <div className="p-6 bg-white shadow rounded w-96">
-        <h1 className="text-xl font-bold mb-4">Booking Page</h1>
-        <p>Course: {course}</p>
-        <input type="date" onChange={(e) => setDate(e.target.value)} className="w-full border p-2 mt-2"/>
-        <input type="time" onChange={(e) => setTime(e.target.value)} className="w-full border p-2 mt-2"/>
-        <input placeholder="Phone" onChange={(e) => setPhone(e.target.value)} className="w-full border p-2 mt-2"/>
-        <input placeholder="Email" onChange={(e) => setEmail(e.target.value)} className="w-full border p-2 mt-2"/>
-        <button onClick={handleBooking} className="bg-orange-500 text-white w-full p-2 mt-3">
-          Confirm
+    <div className="flex justify-center items-center min-h-screen bg-gray-50">
+      <div className="bg-white p-8 rounded-2xl shadow-lg w-96">
+        <h1 className="text-2xl font-bold text-teal-800 mb-2">Book a Session</h1>
+        <p className="text-gray-500 mb-6">Course: <span className="font-semibold text-orange-500">{course}</span></p>
+
+        <div className="space-y-4">
+          <div>
+            <label className="text-sm font-semibold text-gray-700 mb-1 block">Select Date</label>
+            <input
+              type="date"
+              onChange={(e) => setDate(e.target.value)}
+              className="w-full border-2 border-gray-200 rounded-xl p-3 focus:border-orange-400 focus:outline-none"
+            />
+          </div>
+          <div>
+            <label className="text-sm font-semibold text-gray-700 mb-1 block">Select Time</label>
+            <input
+              type="time"
+              onChange={(e) => setTime(e.target.value)}
+              className="w-full border-2 border-gray-200 rounded-xl p-3 focus:border-orange-400 focus:outline-none"
+            />
+          </div>
+          <div>
+            <label className="text-sm font-semibold text-gray-700 mb-1 block">Phone Number</label>
+            <input
+              type="tel"
+              placeholder="Your phone number"
+              onChange={(e) => setPhone(e.target.value)}
+              className="w-full border-2 border-gray-200 rounded-xl p-3 focus:border-orange-400 focus:outline-none"
+            />
+          </div>
+          <div>
+            <label className="text-sm font-semibold text-gray-700 mb-1 block">Email Address</label>
+            <input
+              type="email"
+              placeholder="Your email address"
+              onChange={(e) => setEmail(e.target.value)}
+              className="w-full border-2 border-gray-200 rounded-xl p-3 focus:border-orange-400 focus:outline-none"
+            />
+          </div>
+        </div>
+
+        <button
+          onClick={handleBooking}
+          className="w-full bg-orange-500 hover:bg-orange-600 text-white font-bold py-4 rounded-xl mt-6 transition-all">
+          Confirm Booking →
         </button>
       </div>
     </div>
