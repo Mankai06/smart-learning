@@ -35,7 +35,7 @@ export async function POST(req: NextRequest) {
     // Email to you (Shree)
     await resend.emails.send({
       from: 'onboarding@resend.dev',
-      to: 'shreedevamankai06@gmail.com',
+      to: 'devamankaishree@gmail.com',
       subject: '🔔 New Booking — Smart Learning',
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
