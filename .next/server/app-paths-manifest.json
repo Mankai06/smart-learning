@@ -1,4 +1,21 @@
 {
+  "/_not-found/page": "app/_not-found/page.js",
+  "/admin/bookings/page": "app/admin/bookings/page.js",
+  "/admin/tutors/page": "app/admin/tutors/page.js",
+  "/about/page": "app/about/page.js",
+  "/auth/login/page": "app/auth/login/page.js",
+  "/api/mock-interview/route": "app/api/mock-interview/route.js",
+  "/admin/login/page": "app/admin/login/page.js",
+  "/admin/dashboard/page": "app/admin/dashboard/page.js",
+  "/auth/signup/page": "app/auth/signup/page.js",
+  "/contact/page": "app/contact/page.js",
+  "/booking/confirm/page": "app/booking/confirm/page.js",
+  "/become-a-tutor/page": "app/become-a-tutor/page.js",
+  "/my-bookings/page": "app/my-bookings/page.js",
+  "/mock-interview/page": "app/mock-interview/page.js",
+  "/reviews/page": "app/reviews/page.js",
+  "/tutor/page": "app/tutor/page.js",
+  "/services/page": "app/services/page.js",
   "/page": "app/page.js",
-  "/services/page": "app/services/page.js"
+  "/booking/page": "app/booking/page.js"
 }
