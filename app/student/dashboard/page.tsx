@@ -236,16 +236,15 @@ export default function StudentDashboard() {
                 </div>
 
                 {/* CONTINUE LEARNING */}
-                <Link href="/course-player">
+                <Link href={`/course/${item.course_id?.id}`}>
 
-                  <button className="mt-6 w-full bg-orange-500 hover:bg-orange-600 text-white py-4 rounded-2xl text-xl font-bold">
+  <button className="mt-6 w-full bg-orange-500 hover:bg-orange-600 text-white py-4 rounded-2xl text-xl font-bold">
 
-                    Continue Learning 🎥
+    Continue Learning 🎥
 
-                  </button>
+  </button>
 
-                </Link>
-
+</Link>
                 {/* MARK COMPLETE */}
                 <button
                   onClick={() => markComplete(item.id)}

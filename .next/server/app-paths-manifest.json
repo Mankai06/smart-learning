@@ -1,8 +1,5 @@
 {
   "/course-player/page": "app/course-player/page.js",
-  "/admin/add-course/page": "app/admin/add-course/page.js",
-  "/services/page": "app/services/page.js",
   "/page": "app/page.js",
-  "/student/dashboard/page": "app/student/dashboard/page.js",
-  "/my-bookings/page": "app/my-bookings/page.js"
+  "/student/dashboard/page": "app/student/dashboard/page.js"
 }
